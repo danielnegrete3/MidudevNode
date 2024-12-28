@@ -1,0 +1,29 @@
+{
+  "name": "class2_node_api",
+  "version": "1.0.0",
+  "main": "1.http.js",
+  "scripts": {
+    "dev:1" : "nodemon 1.http.js",
+    "dev:2" : "nodemon 2.routing.js",
+    "dev:3" : "node --watch 3.express.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "nodemon": "^3.1.9",
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "dependencies": {
+    "express": "4.21.2"
+  }
+}
