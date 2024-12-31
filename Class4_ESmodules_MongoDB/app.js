@@ -1,12 +1,16 @@
-const express = require('express');
-const crypto = require('node:crypto');
-const cors = require('cors');
-const { validateMovie, validatePartialMovie } = require('./schemas/movie');
+import express, { json } from 'express';
+import { randomUUID } from 'node:crypto';
+import cors from 'cors';
+import { validateMovie, validatePartialMovie } from './schemas/movie.js';
+// import fs from 'node:fs';
+// let movies = JSON.parse(fs.readFileSync('./movies.json', 'utf-8'));
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
 const movies = require('./movies.json');
 
 const app = express();
 app.disable('x-powered-by');
-app.use(express.json());
+app.use(json());
 app.use(cors());
 
 app.get('/', (req, res) => {
@@ -36,7 +40,7 @@ app.post('/movies', (req, res) => {
     }
     // Esto no es REST porque se guarda en memoria 
     const newMovie = {
-        id: crypto.randomUUID(),
+        id: randomUUID(),
         ...result.data
     };
 

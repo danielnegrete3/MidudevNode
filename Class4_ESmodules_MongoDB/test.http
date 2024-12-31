@@ -1,0 +1,69 @@
+### optener las peliculas
+GET http://localhost:3000/movies
+
+
+### optener las peliculas de un cierto genero
+GET http://localhost:3000/movies?genre=sci-Fi
+
+
+### optener una pelicula por id
+GET http://localhost:3000/movies/04986507-b3ed-442c-8ae7-4c5df804f896
+
+
+### Crear una pelicula
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "id": "04986507-b3ed-442c-8ae7-4c5df804f896",
+  "title": "The Avengers",
+  "year": 2012,
+  "director": "Joss Whedon",
+  "duration": 143,
+  "poster": "https://img.fruugo.com/product/7/41/14532417_max.jpg",
+  "genre": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "rate": 8
+}
+
+
+### Modificar toda la pelicula
+PUT  http://localhost:3000/movies/04986507-b3ed-442c-8ae7-4c5df804f896
+Content-Type: application/json
+
+{
+  "id": "04986507-b3ed-442c-8ae7-4c5df804f896",
+  "title": "The Avengers",
+  "year": 2012,
+  "director": "Joss Whedon",
+  "duration": 143,
+  "poster": "https://img.fruugo.com/product/7/41/14532417_max.jpg",
+  "genre": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "rate": 8
+}
+
+### Modificar parte de una pelicula
+PATCH   http://localhost:3000/movies/04986507-b3ed-442c-8ae7-4c5df804f896
+Content-Type: application/json
+
+{
+  "id": "04986507-b3ed-442c-8ae7-4c5df804f896",
+  "title": "The Avengers",
+  "year": 2012,
+  "director": "Joss Whedon",
+  "duration": 143,
+  "poster": "https://img.fruugo.com/product/7/41/14532417_max.jpg",
+  "genre": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "rate": 8
+}
