@@ -2,11 +2,19 @@
   "type": "module",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "4.21.2",
+    "mongodb": "6.12.0",
     "zod": "3.24.1"
   },
   "scripts": {
     "start": "node app.js",
-    "dev" : "node --watch app.js"
+    "dev": "node --watch app.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17.0",
+    "globals": "^15.14.0",
+    "standard": "^17.1.2"
   }
 }

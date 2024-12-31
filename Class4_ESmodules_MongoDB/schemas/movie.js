@@ -1,8 +1,8 @@
-import { z } from 'zod';
+import z from 'zod';
 
 const movieSchema = z.object({
     title: z.string({invalid_type_error: 'Title must be a string'}).min(1, {invalid_type_error: 'Title must be a non-empty string'}),
-    genre: z.array(z.enum(['action', 'comedy', 'drama', 'fantasy', 'horror', 'mystery', 'romance', 'thriller', 'western'])).min(1, {invalid_type_error: 'Genre must be a non-empty array of strings'}),
+    genre: z.array(z.enum(['Action', 'Comedy', 'Drama', 'Fantasy', 'Horror', 'Mystery', 'Romance', 'Thriller', 'Western'])).min(1, {invalid_type_error: 'Genre must be a non-empty array of strings'}),
     year: z.number().int().min(1900),
     director: z.string(),
     duration: z.number().int().positive(),

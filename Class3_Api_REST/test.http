@@ -15,7 +15,6 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-  "id": "04986507-b3ed-442c-8ae7-4c5df804f896",
   "title": "The Avengers",
   "year": 2012,
   "director": "Joss Whedon",
@@ -35,7 +34,6 @@ PUT  http://localhost:3000/movies/04986507-b3ed-442c-8ae7-4c5df804f896
 Content-Type: application/json
 
 {
-  "id": "04986507-b3ed-442c-8ae7-4c5df804f896",
   "title": "The Avengers",
   "year": 2012,
   "director": "Joss Whedon",
@@ -54,7 +52,6 @@ PATCH   http://localhost:3000/movies/04986507-b3ed-442c-8ae7-4c5df804f896
 Content-Type: application/json
 
 {
-  "id": "04986507-b3ed-442c-8ae7-4c5df804f896",
   "title": "The Avengers",
   "year": 2012,
   "director": "Joss Whedon",
