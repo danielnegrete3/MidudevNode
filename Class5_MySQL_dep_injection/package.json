@@ -9,8 +9,13 @@
     "zod": "3.24.1"
   },
   "scripts": {
-    "start": "node app.js",
-    "dev": "node --watch app.js"
+    "start:mysql": "node index_mysql.js",
+    "start:mongodb": "node index_mongodb.js",
+    "start:fs": "node index_fs.js",
+    
+    "dev:mysql": "node --watch index_mysql.js",
+    "dev:mongodb": "node --watch index_mongodb.js",
+    "dev:fs": "node --watch index_fs.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

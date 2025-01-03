@@ -3,7 +3,7 @@ GET http://localhost:3000/movies
 
 
 ### optener las peliculas de un cierto genero
-GET http://localhost:3000/movies?genre=Action
+GET http://localhost:3000/movies?genre=Crime
 
 
 ### optener una pelicula por id
@@ -47,7 +47,7 @@ PATCH   http://localhost:3000/movies/ba355ef8-c941-11ef-885c-661c2d9530e5
 Content-Type: application/json
 
 {
-  "year": 2028,
+  "year": 2029,
   "genre": [
     "Action",
     "Thriller"
